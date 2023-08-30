@@ -25,14 +25,13 @@ try {
     $mail->SMTPSecure = 'ssl';
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Port = 465;
-    $mail->Username   = 'mleonova746@gmail.com'; // Логин на почте
-    // $mail->Password   = 'cqpncnxtiabspbgf'; //пароль на яндекс
-    $mail->Password   = 'jokfrmmafknraudl';
+    $mail->Username   = '***@gmail.com'; // Логин на почте
+    $mail->Password   = '****';
 
     $mail->isHTML(true);
 
-    $mail->setFrom('mleonova746@gmail.com', 'Maria Leonova');
-    $mail->addAddress('masha-leonova@mail.ru');
+    $mail->setFrom('****@gmail.com', 'Maria Leonova');
+    $mail->addAddress('*****@mail.ru');
     $mail->Subject = 'Новое письмо с сайта';
 
     $name = $request->name;
